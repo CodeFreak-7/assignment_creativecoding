@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://c4mj8erlcgsm5"]
+
+[ext_resource type="Texture2D" uid="uid://dvwo07a4ecgjs" path="res://key_drums_logo.png" id="1_fu7sn"]
+[ext_resource type="Script" uid="uid://cxggqae54w5mw" path="res://main_menu.gd" id="1_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://b5sg6yjwydi0d" path="res://play_button_normal.png" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://3nxuuris3sp7" path="res://play_button_hover.png" id="3_glbon"]
+[ext_resource type="Texture2D" uid="uid://ct0lht7bo73rn" path="res://quit_button_normal.png" id="4_glbon"]
+[ext_resource type="Texture2D" uid="uid://dqprtww54nd8q" path="res://quit_button_hover.png" id="5_nlkkf"]
+
+[node name="main_menu" type="Node2D" unique_id=282887382]
+script = ExtResource("1_nlkkf")
+
+[node name="KeyDrumsLogo" type="Sprite2D" parent="." unique_id=793983722]
+position = Vector2(961.99994, 218)
+scale = Vector2(1.0305555, 1.0305555)
+texture = ExtResource("1_fu7sn")
+
+[node name="playbutton" type="TextureButton" parent="." unique_id=1213138287]
+offset_left = 747.99994
+offset_top = 612.0
+offset_right = 1340.0
+offset_bottom = 809.0
+scale = Vector2(0.715, 0.715)
+texture_normal = ExtResource("2_fu7sn")
+texture_pressed = ExtResource("2_fu7sn")
+texture_hover = ExtResource("3_glbon")
+
+[node name="quitbutton" type="TextureButton" parent="." unique_id=1623713286]
+offset_left = 743.99994
+offset_top = 790.0
+offset_right = 1336.0
+offset_bottom = 987.0
+scale = Vector2(0.715, 0.715)
+texture_normal = ExtResource("4_glbon")
+texture_pressed = ExtResource("4_glbon")
+texture_hover = ExtResource("5_nlkkf")
+
+[connection signal="pressed" from="playbutton" to="." method="_on_playbutton_pressed"]
+[connection signal="pressed" from="quitbutton" to="." method="_on_quitbutton_pressed"]
