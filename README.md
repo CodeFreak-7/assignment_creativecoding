@@ -23,16 +23,16 @@ This project has custom UI, animations and a main menu.
 
 
 ## Controls
-Key             Drum
---------------------------
-E           Close Hi-Hat
-R           Crash
-U           Ride
-I           Open Hi-Hat
-F           Low Tom
-G           Snare
-H           High Tom
-Space       Kick
+| Key | Drum |
+|-----|------|
+| E   | Close Hi-Hat |
+| R   | Crash |
+| U   | Ride |
+| I   | Close Hi-Hat |
+| F   | Low Tom |
+| G   | Snare |
+| H   | High Tom |
+| Space | Kick |
 
 
 ## How to run
