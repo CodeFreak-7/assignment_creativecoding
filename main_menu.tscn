@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://ct0lht7bo73rn" path="res://quit_button_normal.png" id="4_glbon"]
 [ext_resource type="Texture2D" uid="uid://dqprtww54nd8q" path="res://quit_button_hover.png" id="5_nlkkf"]
 [ext_resource type="Script" uid="uid://voacwm5ekqoe" path="res://background.gd" id="7_qe12f"]
+[ext_resource type="Texture2D" uid="uid://cif4vlarb2h6g" path="res://snare_image.png" id="8_dy7ct"]
+[ext_resource type="Texture2D" uid="uid://bv8jtaikgihqt" path="res://crash.png" id="9_0o4t1"]
 
 [node name="main_menu" type="Node2D" unique_id=282887382]
 script = ExtResource("1_nlkkf")
@@ -38,6 +40,14 @@ scale = Vector2(0.715, 0.715)
 texture_normal = ExtResource("4_glbon")
 texture_pressed = ExtResource("4_glbon")
 texture_hover = ExtResource("5_nlkkf")
+
+[node name="SnareImage" type="Sprite2D" parent="." unique_id=278695972]
+position = Vector2(269, 720)
+texture = ExtResource("8_dy7ct")
+
+[node name="Crash" type="Sprite2D" parent="." unique_id=1768824467]
+position = Vector2(1667, 739)
+texture = ExtResource("9_0o4t1")
 
 [connection signal="pressed" from="playbutton" to="." method="_on_playbutton_pressed"]
 [connection signal="pressed" from="quitbutton" to="." method="_on_quitbutton_pressed"]
