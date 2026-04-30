@@ -167,3 +167,9 @@ func animate_ride():
 	ride_button.texture_normal = ride_pressed
 	await get_tree().create_timer(0.10).timeout
 	ride_button.texture_normal = ride_normal
+
+
+
+# Button to go to main menu scene
+func _on_menu_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://main_menu.tscn")

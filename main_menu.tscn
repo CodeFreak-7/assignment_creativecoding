@@ -6,9 +6,13 @@
 [ext_resource type="Texture2D" uid="uid://3nxuuris3sp7" path="res://play_button_hover.png" id="3_glbon"]
 [ext_resource type="Texture2D" uid="uid://ct0lht7bo73rn" path="res://quit_button_normal.png" id="4_glbon"]
 [ext_resource type="Texture2D" uid="uid://dqprtww54nd8q" path="res://quit_button_hover.png" id="5_nlkkf"]
+[ext_resource type="Script" uid="uid://voacwm5ekqoe" path="res://background.gd" id="7_qe12f"]
 
 [node name="main_menu" type="Node2D" unique_id=282887382]
 script = ExtResource("1_nlkkf")
+
+[node name="MenuBackground" type="Node2D" parent="." unique_id=871726060]
+script = ExtResource("7_qe12f")
 
 [node name="KeyDrumsLogo" type="Sprite2D" parent="." unique_id=793983722]
 position = Vector2(961.99994, 218)

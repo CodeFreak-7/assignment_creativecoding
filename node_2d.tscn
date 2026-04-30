@@ -27,6 +27,8 @@
 [ext_resource type="Texture2D" uid="uid://cr04eoyl30by8" path="res://g_keyboard.png" id="24_2u7jv"]
 [ext_resource type="Texture2D" uid="uid://cqxv57wngwq31" path="res://h_keyboard.png" id="25_24dk6"]
 [ext_resource type="Texture2D" uid="uid://dw6op73bnnaq7" path="res://space_keyboard.png" id="26_mryly"]
+[ext_resource type="Texture2D" uid="uid://drxb4fuqkfj2v" path="res://menu_normal.png" id="28_ebxd8"]
+[ext_resource type="Texture2D" uid="uid://swrtiqal2o0j" path="res://menu_hover.png" id="29_2u7jv"]
 
 [node name="Node2D" type="Node2D" unique_id=653914239]
 script = ExtResource("1_0e48y")
@@ -159,6 +161,14 @@ position = Vector2(939.99994, 815)
 scale = Vector2(0.23412699, 0.23412699)
 texture = ExtResource("26_mryly")
 
+[node name="MenuButton" type="TextureButton" parent="." unique_id=908285779]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.715, 0.715)
+texture_normal = ExtResource("28_ebxd8")
+texture_pressed = ExtResource("28_ebxd8")
+texture_hover = ExtResource("29_2u7jv")
+
 [connection signal="pressed" from="Kick" to="." method="_on_kick_pressed"]
 [connection signal="pressed" from="Snare" to="." method="_on_snare_pressed"]
 [connection signal="pressed" from="HighTom" to="." method="_on_high_tom_pressed"]
@@ -167,3 +177,4 @@ texture = ExtResource("26_mryly")
 [connection signal="pressed" from="OpenHiHat" to="." method="_on_open_hi_hat_pressed"]
 [connection signal="pressed" from="Crash" to="." method="_on_crash_pressed"]
 [connection signal="pressed" from="Ride" to="." method="_on_ride_pressed"]
+[connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
