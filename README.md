@@ -5,21 +5,21 @@ Drums app made for "School of Rock" assignment for Creative Coding TU850.
 Rishi Prasanthi Shabil
 
 ## YouTube Link
-...
+https://youtu.be/6dCR1cXyKLU?si=veBmw_VB3aDEkN07
 
 ## Description
-A drums app made using Godot.
-Users can play different drum sounds using both mouse clicks and keyboard inputs.
-This project uses MIDI input.
-This project has custom UI, animations and a main menu.
+1. A drums app made using Godot.
+2. Users can play different drum sounds using both mouse clicks and keyboard inputs.
+3. This project uses MIDI input.
+4. This project has custom UI, animations and a main menu.
 
 
 ## Features
--> Interactive drum buttons (Kick, Snare, Hi-Hat, etc.).
--> Keyboard controls for playing drums.
--> Visual animations for button presses.
--> Custom UI.
--> Main menu with Play and Exit buttons.
+- Interactive drum buttons (Kick, Snare, Hi-Hat, etc.).
+- Keyboard controls for playing drums.
+- Visual animations for button presses.
+- Custom UI.
+- Main menu with Play and Exit buttons.
 
 
 ## Controls
