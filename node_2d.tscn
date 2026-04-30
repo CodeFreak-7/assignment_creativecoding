@@ -1,0 +1,169 @@
+[gd_scene format=3 uid="uid://cu76brdptwhb7"]
+
+[ext_resource type="Script" uid="uid://dlnxx2jh6xejq" path="res://node_2d.gd" id="1_0e48y"]
+[ext_resource type="Script" uid="uid://voacwm5ekqoe" path="res://background.gd" id="2_1fr6y"]
+[ext_resource type="Script" uid="uid://bf1vnufu7na6x" path="res://addons/midi/MidiPlayer.gd" id="2_epypp"]
+[ext_resource type="Texture2D" uid="uid://c30doccx3kavo" path="res://kick_image.png" id="3_epypp"]
+[ext_resource type="Texture2D" uid="uid://b5jxdgtlebw4b" path="res://kick_clicked.png" id="4_0hol4"]
+[ext_resource type="Texture2D" uid="uid://cif4vlarb2h6g" path="res://snare_image.png" id="5_q6r6c"]
+[ext_resource type="Texture2D" uid="uid://dw8opaml1shfa" path="res://snare_click.png" id="6_kdubu"]
+[ext_resource type="Texture2D" uid="uid://dfkdweisuxeau" path="res://hightom_image.png" id="7_rj586"]
+[ext_resource type="Texture2D" uid="uid://cjjd5l5u6b3xs" path="res://hightom_click.png" id="8_4d7sh"]
+[ext_resource type="Texture2D" uid="uid://d4fevgqe7xgn7" path="res://lowtom.png" id="9_ir8iy"]
+[ext_resource type="Texture2D" uid="uid://dqx8msgrnj1f3" path="res://lowtom_click.png" id="10_hqns4"]
+[ext_resource type="Texture2D" uid="uid://ph2gjk6rcqdw" path="res://closehh.png" id="11_k73cj"]
+[ext_resource type="Texture2D" uid="uid://gq27k2j1ti73" path="res://closehh_click.png" id="12_rjqkl"]
+[ext_resource type="Texture2D" uid="uid://h2t8ig10jtb" path="res://openhh.png" id="13_fs4d3"]
+[ext_resource type="Texture2D" uid="uid://kr106yqorgg4" path="res://openhh_click.png" id="14_7vxoj"]
+[ext_resource type="Texture2D" uid="uid://bv8jtaikgihqt" path="res://crash.png" id="15_ei405"]
+[ext_resource type="Texture2D" uid="uid://bmyxn4ijry2bc" path="res://crash_click.png" id="16_e8dv2"]
+[ext_resource type="Texture2D" uid="uid://bmpkwcij2elmv" path="res://ride.png" id="17_2nhjh"]
+[ext_resource type="Texture2D" uid="uid://dfk2jihjusge" path="res://ride_click.png" id="18_bjha6"]
+[ext_resource type="Texture2D" uid="uid://ys4sfsqiivwg" path="res://e_keyboard.png" id="19_rjqkl"]
+[ext_resource type="Texture2D" uid="uid://5ayu3i35e8y5" path="res://r_keyboard.png" id="20_gt76g"]
+[ext_resource type="Texture2D" uid="uid://cgl8e3dsbrwy2" path="res://u_keyboard.png" id="21_1fr6y"]
+[ext_resource type="Texture2D" uid="uid://canjsps8gqdyq" path="res://i_keyboard.png" id="22_2hxjc"]
+[ext_resource type="Texture2D" uid="uid://dlguisqn44mkq" path="res://f_keyboard.png" id="23_ebxd8"]
+[ext_resource type="Texture2D" uid="uid://cr04eoyl30by8" path="res://g_keyboard.png" id="24_2u7jv"]
+[ext_resource type="Texture2D" uid="uid://cqxv57wngwq31" path="res://h_keyboard.png" id="25_24dk6"]
+[ext_resource type="Texture2D" uid="uid://dw6op73bnnaq7" path="res://space_keyboard.png" id="26_mryly"]
+
+[node name="Node2D" type="Node2D" unique_id=653914239]
+script = ExtResource("1_0e48y")
+
+[node name="Background" type="Node2D" parent="." unique_id=1591558413]
+script = ExtResource("2_1fr6y")
+
+[node name="MidiPlayer" type="Node" parent="." unique_id=616198592]
+script = ExtResource("2_epypp")
+soundfont = "res://Aspirin-Stereo.sf2"
+metadata/_custom_type_script = "uid://bf1vnufu7na6x"
+
+[node name="Kick" type="TextureButton" parent="." unique_id=1947765513]
+offset_left = 800.0
+offset_top = 764.0
+offset_right = 1300.0
+offset_bottom = 1264.0
+scale = Vector2(0.571, 0.571)
+focus_mode = 0
+texture_normal = ExtResource("3_epypp")
+texture_pressed = ExtResource("4_0hol4")
+
+[node name="Snare" type="TextureButton" parent="." unique_id=165080004]
+offset_left = 815.0
+offset_top = 543.0
+offset_right = 1315.0
+offset_bottom = 1043.0
+scale = Vector2(0.488, 0.488)
+focus_mode = 0
+texture_normal = ExtResource("5_q6r6c")
+texture_pressed = ExtResource("6_kdubu")
+
+[node name="HighTom" type="TextureButton" parent="." unique_id=845924448]
+offset_left = 1018.0
+offset_top = 676.0
+offset_right = 1518.0
+offset_bottom = 1176.0
+scale = Vector2(0.5, 0.5)
+focus_mode = 0
+texture_normal = ExtResource("7_rj586")
+texture_pressed = ExtResource("8_4d7sh")
+
+[node name="LowTom" type="TextureButton" parent="." unique_id=2078326230]
+offset_left = 595.0
+offset_top = 676.0
+offset_right = 1095.0
+offset_bottom = 1176.0
+scale = Vector2(0.5, 0.5)
+focus_mode = 0
+texture_normal = ExtResource("9_ir8iy")
+texture_pressed = ExtResource("10_hqns4")
+
+[node name="ClosedHiHat" type="TextureButton" parent="." unique_id=1497613227]
+offset_left = 477.0
+offset_top = 487.0
+offset_right = 977.0
+offset_bottom = 987.0
+scale = Vector2(0.5, 0.5)
+focus_mode = 0
+texture_normal = ExtResource("11_k73cj")
+texture_pressed = ExtResource("12_rjqkl")
+
+[node name="OpenHiHat" type="TextureButton" parent="." unique_id=2007469788]
+offset_left = 1149.0
+offset_top = 497.0
+offset_right = 1649.0
+offset_bottom = 997.0
+scale = Vector2(0.5, 0.5)
+focus_mode = 0
+texture_normal = ExtResource("13_fs4d3")
+texture_pressed = ExtResource("14_7vxoj")
+
+[node name="Crash" type="TextureButton" parent="." unique_id=1053467808]
+offset_left = 663.0
+offset_top = 343.0
+offset_right = 1163.0
+offset_bottom = 843.0
+scale = Vector2(0.5, 0.5)
+focus_mode = 0
+texture_normal = ExtResource("15_ei405")
+texture_pressed = ExtResource("16_e8dv2")
+
+[node name="Ride" type="TextureButton" parent="." unique_id=1253954893]
+offset_left = 977.0
+offset_top = 355.0
+offset_right = 1477.0
+offset_bottom = 855.0
+scale = Vector2(0.5, 0.5)
+focus_mode = 0
+texture_normal = ExtResource("17_2nhjh")
+texture_pressed = ExtResource("18_bjha6")
+
+[node name="EKeyboard" type="Sprite2D" parent="." unique_id=322292756]
+position = Vector2(521, 541)
+scale = Vector2(0.25198412, 0.25198412)
+texture = ExtResource("19_rjqkl")
+
+[node name="RKeyboard" type="Sprite2D" parent="." unique_id=1524085745]
+position = Vector2(680.875, 431.12506)
+scale = Vector2(0.2529763, 0.2529763)
+texture = ExtResource("20_gt76g")
+
+[node name="UKeyboard" type="Sprite2D" parent="." unique_id=1935590404]
+position = Vector2(1202, 430)
+scale = Vector2(0.24404757, 0.24404757)
+texture = ExtResource("21_1fr6y")
+
+[node name="IKeyboard" type="Sprite2D" parent="." unique_id=120125050]
+position = Vector2(1362, 546)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("22_2hxjc")
+
+[node name="FKeyboard" type="Sprite2D" parent="." unique_id=1018185103]
+position = Vector2(610, 808)
+scale = Vector2(0.2678575, 0.2678575)
+texture = ExtResource("23_ebxd8")
+
+[node name="GKeyboard" type="Sprite2D" parent="." unique_id=691896587]
+position = Vector2(939, 563)
+scale = Vector2(0.2777778, 0.2777778)
+texture = ExtResource("24_2u7jv")
+
+[node name="HKeyboard" type="Sprite2D" parent="." unique_id=328466078]
+position = Vector2(1253, 796)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("25_24dk6")
+
+[node name="SpaceKeyboard" type="Sprite2D" parent="." unique_id=1858881078]
+position = Vector2(939.99994, 815)
+scale = Vector2(0.23412699, 0.23412699)
+texture = ExtResource("26_mryly")
+
+[connection signal="pressed" from="Kick" to="." method="_on_kick_pressed"]
+[connection signal="pressed" from="Snare" to="." method="_on_snare_pressed"]
+[connection signal="pressed" from="HighTom" to="." method="_on_high_tom_pressed"]
+[connection signal="pressed" from="LowTom" to="." method="_on_low_tom_pressed"]
+[connection signal="pressed" from="ClosedHiHat" to="." method="_on_closed_hi_hat_pressed"]
+[connection signal="pressed" from="OpenHiHat" to="." method="_on_open_hi_hat_pressed"]
+[connection signal="pressed" from="Crash" to="." method="_on_crash_pressed"]
+[connection signal="pressed" from="Ride" to="." method="_on_ride_pressed"]
